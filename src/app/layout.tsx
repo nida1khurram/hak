@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/ui/header/header";
 import Footer from "@/components/ui/footer/footer";
 
+import { Inter,Roboto } from "next/font/google";
 const inter = Inter({ subsets: ["latin"] });
+const roboto = Roboto({ subsets: ["latin"], weight:['400','700'], variable:'--font-roboto',});
 
 export const metadata: Metadata = {
   title: "Hackhathon Ecommerce Assignment",
@@ -18,7 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={(inter.className, roboto.className)}>
         <Header />
         {children}
         <Footer />
