@@ -17,6 +17,7 @@ export default function Statistics() {
        layout="fill"
        objectFit="cover"
        className="z-0"
+     
      />
      <div className="absolute inset-0 bg-black bg-opacity-90 z-10 flex flex-col md:flex-row ">
       <div className="grid grid-cols-2 md:grid-cols-4 md:gap-40 mx-auto items-center md:mt-0 mt-10 ">

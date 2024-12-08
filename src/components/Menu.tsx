@@ -14,7 +14,7 @@ const menuItems = [
 export default function Menu() {
   return (
     <section className="max-w-[1929px] mx-auto py-16 px-6">
-      <h2 className="font-greatvibes text-orange-500 text-3xl font-bold text-center mb-8">Choose & Pick</h2>
+      <h2 className="font-greatvibes text-orange-500 text-3xl font-bold text-center mb-8">Choose  &  Pick</h2>
       <h2 className="text-3xl font-bold text-center mb-8 text-white">
         <span className="text-orange-500">Fr</span>om Our Menu
       </h2>
