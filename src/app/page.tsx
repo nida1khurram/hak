@@ -14,16 +14,17 @@ import BlogPosts from "@/components/BlogPosts";
 export default function Home() {
   return (
    <>
+   <div className="bg-[#0D0D0D]">
     <Hero />
       <CreateBest/>
-      <FoodCategories />
-      <ExtraordinaryTaste />
-      <Statistics />
-      <Menu />
-      <Chefs />
-      <Testimonials />
-      <BlogPosts />
-
+      {/* <FoodCategories /> */}
+      {/* <ExtraordinaryTaste /> */}
+      {/* <Statistics /> */}
+      {/* <Menu /> */}
+      {/* <Chefs /> */}
+      {/* <Testimonials /> */}
+      {/* <BlogPosts /> */}
+      </div>
 
 
 
