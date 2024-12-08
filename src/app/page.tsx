@@ -19,8 +19,8 @@ export default function Home() {
       <CreateBest/>
       {/* <FoodCategories /> */}
       {/* <ExtraordinaryTaste /> */}
-      {/* <Statistics /> */}
-      {/* <Menu /> */}
+      <Statistics />
+      <Menu />
       {/* <Chefs /> */}
       {/* <Testimonials /> */}
       {/* <BlogPosts /> */}
