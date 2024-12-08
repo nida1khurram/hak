@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import { Facebook, Twitter, Youtube, Instagram, Clock } from 'lucide-react'
 
 export default function Footer() {
@@ -42,7 +43,9 @@ export default function Footer() {
           <ul className="space-y-4">
             <li>
               <Link href="/blog/post1" className="flex items-center">
-                <img src="/placeholder.svg" alt="Post 1" className="w-16 h-16 mr-4 rounded" />
+                {/* <img src="/placeholder.svg" alt="Post 1" className="w-16 h-16 mr-4 rounded" /> */}
+                <Image src="/footer.png" alt="footer-logo" width={50} height={50} className="w-16 h-16 mr-4 rounded" />
+
                 <div>
                   <p className="font-bold">Lorem ipsum dolor sit amet</p>
                   <p className="text-gray-400">15 April, 2022</p>
@@ -51,7 +54,8 @@ export default function Footer() {
             </li>
             <li>
               <Link href="/blog/post2" className="flex items-center">
-                <img src="/placeholder.svg" alt="Post 2" className="w-16 h-16 mr-4 rounded" />
+                {/* <img src="/placeholder.svg" alt="Post 2" className="w-16 h-16 mr-4 rounded" /> */}
+                
                 <div>
                   <p className="font-bold">Consectetur adipiscing elit</p>
                   <p className="text-gray-400">15 April, 2022</p>
