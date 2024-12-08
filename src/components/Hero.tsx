@@ -16,11 +16,11 @@ export default function Hero() {
           objectFit="cover"
           className="z-0"
         />
-      <div className="absolute inset-0 bg-black bg-opacity-90 z-10 flex flex-col md:flex-row  mx-auto">
+      <div className="absolute inset-0 bg-black bg-opacity-90 z-10 flex flex-col md:flex-row  mx-auto ">
           {/* left side */}
       <div className='w-[45%] mx-auto'> 
      
-      <div className="relative z-20 h-full flex flex-col justify-center items-start px-10 mt-10 md:mt-0">
+      <div className="relative z-20 h-full flex flex-col justify-center items-start px-10 mt-4 md:mt-0">
         <div className='md:w-[27px] md:h-[492px] absolute mt-[-100px] md:mt-96 ml-[-20px]'>
         <FaFacebookF className='text-[#ff9F0D] mb-5'/>
         <FaTwitter className='text-[#ff9F0D] mb-5'/>
@@ -33,7 +33,7 @@ export default function Hero() {
         Varius sed pharetra dictum neque massa congue</p>
       
       </div>
-      <Link href="/" className="bg-[#ff9F0D] text-white font-inter text-base px-10 md:px-14 py-1 md:py-4 rounded-full hover:bg-orange-600 transition duration-300 md:ml-0 ml-[-100px] mt-[600px] md:mt-80 absolute">
+      <Link href="/" className="bg-[#ff9F0D] text-white font-inter text-base px-10 md:px-14 py-1 md:py-4 rounded-full hover:bg-orange-600 transition duration-300 md:ml-0 ml-[-130px] mt-[820px] md:mt-80 absolute">
           See Menu
         </Link>
       </div>
@@ -45,7 +45,7 @@ export default function Hero() {
           alt="Hero dish"
           width={877.7}
           height={670}
-          className="z-0 md:mt-0 mt-[-100px] md:ml-0 ml-32"
+          className="z-0 md:mt-0 mt-[2px] md:ml-0 ml-28"
         /></div>
      
       </div>

@@ -9,7 +9,7 @@ import Menu from "@/components/Menu";
 import Chefs from "@/components/Chefs";
 import Testimonials from "@/components/Testimonials";
 import BlogPosts from "@/components/BlogPosts";
-import F2 from "@/components/f2";
+
 
 
 export default function Home() {
@@ -19,13 +19,13 @@ export default function Home() {
     <Hero />
       <CreateBest/>
                {/* <FoodCategories /> */}
-               {/* <ExtraordinaryTaste /> */}
+               <ExtraordinaryTaste />
       <Statistics />
       <Menu />
       {/* <Chefs /> */}
       {/* <Testimonials /> */}
       {/* <BlogPosts /> */}
-      {/* <F2 /> */}
+    
       </div>
 
 
