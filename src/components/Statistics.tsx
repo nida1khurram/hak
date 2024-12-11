@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import { ChefHatIcon as Chef, Utensils, Clock, Users } from 'lucide-react'
+import { Container } from './container'
 
 const stats = [
   { img: "/icons/001.png" , value: 420, label: 'Professional Chefs' },
@@ -10,7 +11,9 @@ const stats = [
 
 export default function Statistics() {
   return (
-       <section className="w-full md:max-w-[1923px] h-[469px] mx-auto py-16 px-6 relative bg-[#0D0D0D] ">
+    // <Container>
+     <section className="max-w-[1923px] h-[468px] mx-auto px-6 relative bg-[#0D0D0D] items-center
+             font-inter  text-white   ">
     <Image
        src="/icons/bgpic.png"
        alt="Hero dish"
@@ -20,15 +23,16 @@ export default function Statistics() {
      
      />
      <div className="absolute inset-0 bg-black bg-opacity-90 z-10 flex flex-col md:flex-row ">
-      <div className="grid grid-cols-2 md:grid-cols-4 md:gap-40 mx-auto items-center md:mt-0 mt-10 ">
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-10 md:gap-40 mx-auto items-center mt:my-0 mt-10  ">
         {stats.map((stat, index) => (
           <div key={index} className="flex flex-col items-center mx-auto ">
              <Image
-                className=""
+                className="w-[80px] h-[80px] md:w-[120px] md:h-[120px]"
                 alt="icon" 
                 width={120}
                 height={120}
                 src={stat.img}
+
               />
             <span className="text-sm text-white mt-5">{stat.label}</span>
             <span className="text-3xl font-bold text-white mt-5 ">{stat.value}{stat.label === 'Years Of Experienced' && '+'}</span>
@@ -38,6 +42,8 @@ export default function Statistics() {
       </div> 
       </div>
     </section>
+    // </Container>
+
   )
 }
 

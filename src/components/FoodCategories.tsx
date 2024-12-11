@@ -44,14 +44,14 @@ const categories = [
 
 export default function FoodCategories() {
   return (
-    <section className="max-w-[1929px] mx-auto bg-[#0D0D0D] py-16 px-6">
+    <section className="max-w-[1320px] mx-auto bg-[#0D0D0D] py-16 px-6">
       <h2 className="text-3xl font-bold text-white text-center mb-8">
         <span><h2 className="text-[#ff9F0D] font-greatvibes text-2xl font-normal mb-2 leading-10">Food Category</h2></span>
         <span className="text-orange-500">Ch</span>oose Food Item
       </h2>
-      <div className="w-[1629px] mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+      <div className="w-[1320px] mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
         {categories.map((category, index) => (
-          <div key={index} className="relative group cursor-pointer">
+          <div  key={index} className="relative group cursor-pointer mr-9">
             <Image
               src={category.image}
               alt={category.name}

@@ -8,7 +8,7 @@ import { FaFacebookF } from "react-icons/fa";
 
 export default function Hero() {
   return (
-    <section className="w-full md:max-w-[1929px] mx-auto flex relative h-screen bg-[#0D0D0D]">
+    <section className="w-full md:max-w-[1920px] mx-auto flex relative h-screen bg-[#0D0D0D]">
        <Image
           src="/hero/bgimage.png"
           alt="Hero dish"
