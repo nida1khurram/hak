@@ -63,7 +63,7 @@ export default function Header() {
             <li className='hover:text-[#ff9F0D]'><Link href="/">Blog</Link></li>
             <li className='hover:text-[#ff9F0D]'><Link href="/">Pages</Link></li>
             <li className='hover:text-[#ff9F0D]'><Link href="/">About</Link></li>
-            <li className='hover:text-[#ff9F0D]'><Link href="/">Shop</Link></li>
+            <li className='hover:text-[#ff9F0D]'><Link href="/shop">Shop</Link></li>
             <li className='hover:text-[#ff9F0D]'><Link href="/">Contact</Link></li>
           </ul>
         </nav>

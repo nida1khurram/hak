@@ -11,7 +11,7 @@ const stats = [
 
 export default function Statistics() {
   return (
-    // <Container>
+    <Container>
      <section className="max-w-[1923px] h-[468px] mx-auto px-6 relative bg-[#0D0D0D] items-center
              font-inter  text-white   ">
     <Image
@@ -23,7 +23,7 @@ export default function Statistics() {
      
      />
      <div className="absolute inset-0 bg-black bg-opacity-90 z-10 flex flex-col md:flex-row ">
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-10 md:gap-40 mx-auto items-center mt:my-0 mt-10  ">
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-40 mx-auto items-center mt:my-0 mt-10  ">
         {stats.map((stat, index) => (
           <div key={index} className="flex flex-col items-center mx-auto ">
              <Image
@@ -42,7 +42,7 @@ export default function Statistics() {
       </div> 
       </div>
     </section>
-    // </Container>
+   </Container>
 
   )
 }
