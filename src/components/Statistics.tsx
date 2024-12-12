@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import { ChefHatIcon as Chef, Utensils, Clock, Users } from 'lucide-react'
+
 import { Container } from './container'
 
 const stats = [

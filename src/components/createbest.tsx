@@ -2,12 +2,12 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { FaCheck } from 'react-icons/fa'
 
-const categories = [
-  { name: 'Salad', image: '/placeholder.svg' },
-  { name: 'Burger', image: '/placeholder.svg' },
-  { name: 'Pasta', image: '/placeholder.svg' },
-  { name: 'Dessert', image: '/placeholder.svg' },
-]
+// const categories = [
+//   { name: 'Salad', image: '/placeholder.svg' },
+//   { name: 'Burger', image: '/placeholder.svg' },
+//   { name: 'Pasta', image: '/placeholder.svg' },
+//   { name: 'Dessert', image: '/placeholder.svg' },
+// ]
 
 export default function CreateBest() {
   return (

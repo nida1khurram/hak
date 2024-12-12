@@ -1,22 +1,14 @@
 // slider shadcn, checkbox, Pagination
 
 'use client'
-import { MdOutlineShoppingBag } from "react-icons/md";
-import { FaRegHeart } from "react-icons/fa";
-import { FaArrowsRotate } from "react-icons/fa6";
 import { FaRegArrowAltCircleRight } from "react-icons/fa";
 import { Slider } from "@/components/ui/slider"
 import StarRating from "@/components/ratingStar/rating";
-import {
-  HoverCard,
-  HoverCardContent,
-  HoverCardTrigger,
-} from "@/components/ui/hover-card"
 import Link from "next/link";
 import { Container } from '../../components/container'
 import { useState } from 'react'
 import Image from 'next/image'
-import { Search, ChevronDown, Star } from 'lucide-react'
+import { Search, ChevronDown } from 'lucide-react'
 import { products } from './productData'
 import {categories} from './productData'
 import { latestProducts } from "./productData";

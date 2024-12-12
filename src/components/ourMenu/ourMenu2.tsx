@@ -3,7 +3,6 @@ import { starterMenu } from './menuData'
 import { mainCourse } from './menuData'
 import { Container } from '../container'
 import { BsCupHot } from "react-icons/bs";
-import Statistics from '../Statistics';
 
 export default function OurMenu2() {
  

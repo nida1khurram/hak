@@ -56,11 +56,6 @@ const ProductList: React.FC<ProductListProps> = ({ filteredProducts }) => {
 
           <div className="p-4">
  {/* sell */}
- {/* <div className='border-2 border-green relative'>
-  <div className='w-[52px] h-[22px] absolute mt-[-200px] mr-40 text-white bg-orange-600'>
-  <p >{product.sell}</p>
-  </div>
-  </div> */}
               <div className="border-2 border-green relative">
                 {product.sell && (
                   <p className={`w-[52px] h-[22px] absolute mt-[-200px] mr-40 text-white bg-orange-600 rounded-md`}>
