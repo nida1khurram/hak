@@ -1,6 +1,6 @@
 import Image from 'next/image'
 
-import { Container } from './container'
+import { Container } from '../container'
 
 const stats = [
   { img: "/icons/001.png" , value: 420, label: 'Professional Chefs' },

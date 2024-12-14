@@ -80,6 +80,7 @@ const ProductList: React.FC<ProductListProps> = ({ filteredProducts }) => {
                
 
             </div>
+            
           </div>
         </div>
       ))}

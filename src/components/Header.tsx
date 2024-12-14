@@ -5,6 +5,7 @@ import { MdOutlineShoppingBag } from "react-icons/md";
 import { Container } from "./container"
 export default function Header() {
   return (
+    
     <Container>
     <header className="w-full mx-auto bg-black font-inter text-base leading-6 text-white py-4 px-6">
       <div className="flex justify-center">
@@ -38,5 +39,6 @@ export default function Header() {
       </div>
     </header>
     </Container>
+   
   );
 }

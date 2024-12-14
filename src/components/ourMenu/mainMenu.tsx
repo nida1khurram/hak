@@ -1,5 +1,5 @@
 import React from 'react'
-import Statistics from '../Statistics'
+import Statistics from '../landingPage/Statistics'
 import OurMenu1 from './ourMenu1'
 import OurMenu3 from './ourMenu3'
 import OurMenu2 from './ourMenu2'

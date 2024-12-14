@@ -1,17 +1,12 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { FaCheck } from 'react-icons/fa'
-
-// const categories = [
-//   { name: 'Salad', image: '/placeholder.svg' },
-//   { name: 'Burger', image: '/placeholder.svg' },
-//   { name: 'Pasta', image: '/placeholder.svg' },
-//   { name: 'Dessert', image: '/placeholder.svg' },
-// ]
+import { Container } from '../container';
 
 export default function CreateBest() {
   return (
-    <section className="w-full md:max-w-[1929px] h-auto md:h-screen  bg-[#0D0D0D] grid md:grid-cols-2 mt-20 px-20 md:mb-0 mb-20">
+    <Container>
+    <section className=" h-auto  bg-[#0D0D0D] grid md:grid-cols-2 py-20 px-20 ">
       {/* left side */}
       <div className=''>
       <h2 className="text-[#ff9F0D] font-greatvibes text-2xl leading-10 mb-2">About Us</h2>
@@ -69,6 +64,7 @@ export default function CreateBest() {
           
       </div>
     </section>
+    </Container>
   )
 }
 
