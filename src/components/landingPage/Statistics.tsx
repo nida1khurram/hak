@@ -12,7 +12,7 @@ const stats = [
 export default function Statistics() {
   return (
     <Container>
-     <section className="max-w-[1923px] h-[468px] mx-auto px-6 relative bg-[#0D0D0D] items-center
+     <section className=" h-[468px] mx-auto px-6 relative bg-[#0D0D0D] items-center
              font-inter  text-white   ">
     <Image
        src="/icons/bgpic.png"
