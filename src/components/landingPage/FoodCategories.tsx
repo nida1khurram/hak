@@ -2,10 +2,10 @@
 import Image from 'next/image'
 import { Container } from '../container';
 const categories = [
-  { name: 'Salad', image: '/FoodCategories/001.png' },
-  { name: 'Burger', image: '/FoodCategories/002.png' },
-  { name: 'Pasta', image: '/FoodCategories/003.png' },
-  { name: 'Dessert', image: '/FoodCategories/004.png' },
+  { name: 'Salad', image: '/foodcategories/001.png' },
+  { name: 'Burger', image: '/foodcategories/002.png' },
+  { name: 'Pasta', image: '/foodcategories/003.png' },
+  { name: 'Dessert', image: '/foodcategories/004.png' },
 ]
 
 export default function FoodCategories() {

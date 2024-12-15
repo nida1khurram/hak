@@ -6,7 +6,7 @@ import { Container } from '../container';
 export default function CreateBest() {
   return (
     <Container>
-    <section className=" h-auto  bg-[#0D0D0D] grid md:grid-cols-2 py-20 px-20 ">
+    <section className=" h-auto  bg-[#0D0D0D] grid md:grid-cols-2 py-2 md:py-20 px-20 ">
       {/* left side */}
       <div className=''>
       <h2 className="text-[#ff9F0D] font-greatvibes text-2xl leading-10 mb-2">About Us</h2>

@@ -3,10 +3,10 @@ import Image from 'next/image'
 import { Container } from '../container'
 
 const stats = [
-  { img: "/icons/001.png" , value: 420, label: 'Professional Chefs' },
-  { img: "/icons/002.png", value: 320, label: 'Items Of Food' },
-  { img:"/icons/003.png" , value: 30, label: 'Years Of Experienced' },
-  { img:"/icons/004.png" , value: 220, label: 'Happy Customers' },
+  { img: "/statistic/001.png" , value: 420, label: 'Professional Chefs' },
+  { img: "/statistic/002.png", value: 320, label: 'Items Of Food' },
+  { img:"/statistic/003.png" , value: 30, label: 'Years Of Experienced' },
+  { img:"/statistic/004.png" , value: 220, label: 'Happy Customers' },
 ]
 
 export default function Statistics() {
@@ -15,7 +15,7 @@ export default function Statistics() {
      <section className=" h-[468px] mx-auto px-6 relative bg-[#0D0D0D] items-center
              font-inter  text-white   ">
     <Image
-       src="/icons/bgpic.png"
+       src="/statistic/bgpic.png"
        alt="Hero dish"
        layout="fill"
        objectFit="cover"

@@ -26,7 +26,7 @@ const blogPosts = [
 export default function BlogPosts() {
   return (
     <Container>
-    <section className="bg-[#0D0D0D] mx-auto py-16 px-6">
+    <section className="bg-[#0D0D0D] mx-auto py-4 md:py-16 px-6">
       <div className='md:max-w-[1320px] md:max-h-[732px] mx-auto'>
       <div className='text-center mb-8'>
       <h2 className="font-greatvibes text-orange-500 text-3xl font-bold  mb-4">Blog Post</h2>
