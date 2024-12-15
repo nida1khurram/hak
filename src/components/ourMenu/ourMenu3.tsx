@@ -5,9 +5,9 @@ export default function OurMenu3() {
   return (
     <>
     <Container>
-    <div className='max-w-[1322px] max-h-[275px] mx-auto md:mt-[700px] mb-[700px] md:mb-10'>
+    <div className='max-w-[1322px] max-h-[275px] mx-auto mt-0 md:mt-[800px] mb-[700px] md:mb-10'>
 <h2 className='text-[18px] text-center text-[#333] mb-3'>Partners & Clients</h2>
-<h1 className='text-5xl font-bold text-center text-[#333] mb-10'>We work with the best people</h1>
+<h1 className='text-3xl md:text-5xl font-bold text-center text-[#333] mb-10'>We work with the best people</h1>
 <div className='max-w-[1322px] max-h-[129.37px] mx-auto'>
 
  <div className="flex flex-col md:flex-row md:gap-16 items-center" >

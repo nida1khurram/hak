@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import { Container } from '../container';
+import Link from 'next/link';
 const chefs = [
   { name: 'D.Estwood', role: 'Chief Chef', image: '/ourchef/001.png' },
   { name: 'D.Scoriesh', role: 'Assistant Chef', image: '/ourchef/002.png' },
@@ -29,7 +30,7 @@ export default function Chefs() {
       </div>
       <div className="text-center mt-8">
         <button className="border-2 border-orange-500 text-white px-6 py-2 rounded-full hover:bg-orange-600 transition duration-300">
-          See More
+         <Link href={'/ourchef'}> See More</Link>
         </button>
       </div>
     </section>

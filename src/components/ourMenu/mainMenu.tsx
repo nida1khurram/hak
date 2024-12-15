@@ -9,7 +9,7 @@ export default function MainMenu() {
     <>
     
     <OurMenu1 />
-      <div className='md:mt-[700px]'>
+      <div className='mt-0 md:mt-[800px] mb-[50px] md:mb-[80px]'>
     <Statistics />
     </div>
     <OurMenu2 />

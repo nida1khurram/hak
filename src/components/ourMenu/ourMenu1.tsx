@@ -9,9 +9,9 @@ export default function OurMenu1() {
   return (
    <Container>
  
-      <div className="md:max-w-[1320px] md:max-h-[628px] mx-auto">
+      <div className="md:max-w-[1320px] md:max-h-[628px] mx-auto py-2 md:py-10">
       
-        <section className="mb-16">
+        <section className="md:mb-16 px-10">
           <div className="flex flex-col md:flex-row gap-2">
             {/* img */}
             <div className="md:w-1/2">
@@ -24,7 +24,7 @@ export default function OurMenu1() {
               />
             </div>
             {/* text */}
-            <div className="md:w-1/2 my-6">
+            <div className="md:w-1/2 my-6 ">
             <BsCupHot className='text-orange-500 w-6 h-6'/>
               <h2 className="text-5xl font-bold mb-6 text-[#333]">Starter Menu</h2>
               <div className="space-y-12">
@@ -46,7 +46,7 @@ export default function OurMenu1() {
           </div>
         </section>
 
-        <section>
+        <section className="md:mb-16 px-10">
           <div className="flex flex-col-reverse md:flex-row gap-8">
             <div className="md:w-1/2 my-6">
             {/* text */}

@@ -1,6 +1,9 @@
+
+import { Container } from '../../components/container'
 export default function Error() {
     return (
-      <main className="max-w-[1920px] ">
+      <Container>
+      <main className=" ">
       <div className="w-1/3 md:w-[630px] md:h-[342px] h-1/6 mt-[120px] p[120px] mx-auto flex flex-col items-center justify-center bg-gray-50 ">
           <h1 className="text-8xl leading-[104px] text-[#FF9F0D] px-37 font-bold mb-8">404</h1>
           <h2 className="text-[32px] text-center leading-10 font-bold text-[#333333] mb-6">Oops! Look likes something going wrong</h2>
@@ -14,5 +17,6 @@ export default function Error() {
             </button>
       </div>
   </main>
+  </Container>
     )
   }

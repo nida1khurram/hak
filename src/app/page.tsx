@@ -11,18 +11,19 @@ import ResturantActive from "@/components/landingPage/resturantActive";
 import BlogPosts from "@/components/landingPage/BlogPosts";
 
 
-import MainMenu from "@/components/ourMenu/mainMenu";
+
 import SignUp from "./signUp/page";
 import SignIn from "./signIn/page";
 import Error from "./errorPage/page";
-import ShopDetail from "./shop/[shopDetail]/page";
 import BlogList from "@/components/blogPage/blog1";
 import AboutUs from "@/components/aboutUs/aboutUs";
-import ShoppingCart from "@/components/shoppingCart/shoppingCart1";
+import FaqPage from "@/components/faq/faq";
+
 export default function Home() {
   return (
    <>
    <div className="">
+    {/* landing Page */}
     <Hero />
       <CreateBest/>
       <FoodCategories />
@@ -33,26 +34,22 @@ export default function Home() {
   <Testimonials />
  <ResturantActive />
  <BlogPosts />
-
+ {/* landing Page end*/}
 
 
 
                         
-{/* <MainMenu /> */}
-{/* <SignUp />
+
+<SignUp />
 <SignIn />
 <Error /> 
-<OurChefs /> */}
+<AboutUs />
+<BlogList />
+<FaqPage />
 
-{/* <AboutUs /> */}
-{/* <BlogList /> */}
-{/* <ShoppingCart /> */}
+
+
       </div>
-
-
-
-
-
 
    </>
   );
