@@ -7,12 +7,14 @@ import {
   FaYoutube,
   FaPinterest,
 } from "react-icons/fa";
+import { Container } from './container'
 import { PiClockClockwiseThin } from "react-icons/pi";
 import Image from "next/image";
 
 export default function Footer() {
   return (
-    <footer className="max-w-[1929px] mx-auto bg-[#0D0D0D] text-white pt-12">
+       <Container>
+    <footer className=" mx-auto bg-[#0D0D0D] text-white pt-12">
       <div className="max-w-[1170px] mx-auto mt-16 flex flex-col md:flex-row justify-between items-center space-y-6 md:space-y-0 px-4 md:px-8">
         <h2 className="md:text-2xl font-bold text-[#ff9F0D] leading-10">
           Still You Need Our Support?
@@ -154,7 +156,7 @@ export default function Footer() {
                   alt="footer-logo"
                   width={422.5}
                   height={294.56}
-                  className="md:max-w-[422.5px] h-[294.56px] absolute z-10 mt-0 md:mt-[-110px] ml-0 md:ml-32"
+                  className="w-[150px] md:w-[422.5px] md:h-[294.56] absolute z-10 mt-[-70px] md:mt-[-170px] ml-[210px] md:ml-[125px]"
                 />
 </div>
 {/* pic */}
@@ -191,5 +193,6 @@ export default function Footer() {
         </div>
       </div>
     </footer>
+    </Container>
   );
 }
