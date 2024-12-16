@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import { IoIosArrowBack } from "react-icons/io";
 import { IoIosArrowForward } from "react-icons/io";
+import Link from 'next/link';
 const CheckoutPage = () => {
   const [sameAsShipping, setSameAsShipping] = useState(false);
 
@@ -77,13 +78,13 @@ const CheckoutPage = () => {
           </div>
 
           <div style={{ display: 'flex', gap:'10px' }}>
+            <Link href={'/cart'}>
             <button type="button"  className='w-[300px] border-2'>
-            <IoIosArrowBack className=' ml-20'/>
                <span className='mt-[-20px]'> Back to cart</span>
                 </button>
+            </Link>
             <button type="submit" style={buttonStyle} className='w-[300px]'>
                 <span className='mt-2'>Proceed to shipping</span>
-                <IoIosArrowForward className='ml-52 mt-[-20px]'/>
             </button>
           </div>
         </form>

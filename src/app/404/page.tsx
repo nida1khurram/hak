@@ -1,8 +1,14 @@
 
+import { TopHeader } from '@/components/header/topHeader'
 import { Container } from '../../components/container'
+import { PHeader } from '@/components/header/t2'
 export default function Error() {
     return (
       <Container>
+         {/* import header */}
+                  <TopHeader />
+                  <PHeader title='404 Error'/>
+                   {/* import header end*/}
       <main className="">
       <div className="w-1/3 md:w-[630px] md:h-[342px] h-1/6 mt-[120px] p[120px] mx-auto flex flex-col items-center justify-center bg-gray-50 ">
           <h1 className="text-8xl leading-[104px] text-[#FF9F0D] px-37 font-bold mb-8">404</h1>

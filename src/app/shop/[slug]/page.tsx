@@ -6,6 +6,8 @@ import { notFound } from 'next/navigation';
 import StarRating from '@/components/ratingStar/rating';
 import ShopDescription from '@/components/shopDetail/shopDescription';
 import SimilarProducts from '@/components/shopDetail/similarProducts';
+import { TopHeader } from '@/components/header/topHeader';
+import { PHeader } from '@/components/header/t2';
 export async function generateStaticParams() {
   return products.map((product) => ({
     slug: product.slug,
@@ -21,6 +23,11 @@ export default function ProductPage({ params }: { params: { slug: string } }) {
 
   return (
     <Container>
+      {/* import header */}
+               <TopHeader />
+               <PHeader title='Our Menu'/>
+                {/* import header end*/}
+                
       <div className="mx-auto px-4 py-16 md:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row gap-8">
           <div className="md:w-1/2 px-0 md:px-32">

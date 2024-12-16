@@ -1,26 +1,27 @@
 
 'use client';
-
+import { Container } from '../container';
 import Image from 'next/image';
 import { Play } from 'lucide-react';
 
 export default function RestaurantActive() {
   return (
-    <section className="relative w-full min-h-screen overflow-hidden">
+    <Container>
+    <section className="relative md-w-[1918px] md:h-[558px] ">
       {/* Background Image */}
-      <div className="absolute w-full h-full">
+      {/* <div className="absolute w-full h-full"> */}
         <Image
           src="/restaurantActive/bg-pic.png"
           alt="Delicious food background"
-          fill
-          className="object-cover"
-          priority
+          layout="fill"
+       objectFit="cover"
+       className="z-0"
         />
-      </div>
+      {/* </div> */}
 
       {/* Content */}
-      <div className="relative h-screen flex items-center">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="absolute mt-0 md:mt-28 ml-0 md:ml-96 flex items-center">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 ">
           <div className="max-w-[705px] mx-auto text-center md:text-right">
             {/* Heading */}
             <span className="font-greatvibes inline-block text-amber-500 text-[32px] sm:text-xl mb-4 animate-fade-in">
@@ -60,5 +61,6 @@ export default function RestaurantActive() {
         </div>
       </div>
     </section>
+    </Container>
   );
 }

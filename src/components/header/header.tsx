@@ -2,7 +2,7 @@
 import Link from 'next/link';
 import { Search } from 'lucide-react';
 import { MdOutlineShoppingBag } from "react-icons/md";
-import { Container } from "./container"
+import { Container } from "../container"
 export default function Header() {
   return (
     

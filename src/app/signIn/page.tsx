@@ -2,11 +2,17 @@ import Link from 'next/link'
 import { AiOutlineMail } from "react-icons/ai";
 import { TiLockClosedOutline } from "react-icons/ti";
 import Image from 'next/image';
+import { TopHeader } from '@/components/header/topHeader';
+import { PHeader } from '@/components/header/t2';
 
 
 export default function SignIn() {
   return (
-    <main className='w-[1920px'>
+    <main className='w-[1920px my-10'>
+       {/* import header */}
+                <TopHeader />
+                <PHeader title='Sign in page'/>
+                 {/* import header end*/}
     <div className="h-[564px] flex py-[120px] items-center justify-center bg-gray-50">
       <div className="w-[424px] py-8 px-9 bg-white shadow-sm">
         <h2 className="text-xl px-37 font-bold mb-8">Sign In</h2>
@@ -45,7 +51,7 @@ export default function SignIn() {
             type="submit"
             className="w-full  h-11 bg-[#FF9F0D] text-white py-2  hover:bg-orange-600 transition-colors"
           >
-            Sign Up
+            Sign In
           </button>
           <div className="mt-6 text-right">
           <Link href="/forgot-password" className="text-sm text-gray-600 hover:text-orange-500">
@@ -54,7 +60,7 @@ export default function SignIn() {
         </div>
         </form>
 
-        <div className="mt-6">
+        <div className="mt-0 ">
           <div className="relative">
             <div className="absolute inset-0 flex items-center">
               <div className="w-full border-t border-gray-200"></div>
@@ -65,6 +71,10 @@ export default function SignIn() {
           </div>
 
           <div className="mt-6 space-y-3">
+          <button className="w-full flex items-center justify-center gap-3 px-4 py-2 border text-base border-gray-200 hover:bg-gray-50 transition-colors">
+              Don't have account ? <Link href={'/signUp'}> <p className='font-bold text-orange-400 hover:text-orange-600'>Sign up</p> </Link>
+            </button>
+
             <button className="w-full flex items-center justify-center gap-3 px-4 py-2 border text-base border-gray-200 hover:bg-gray-50 transition-colors">
               <Image src="/signup/google.png" alt="google-logo" width={5} height={5}  className="h-5 w-5"/>
               Sign up with Google

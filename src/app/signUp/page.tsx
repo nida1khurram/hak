@@ -3,11 +3,19 @@ import { PiUser } from "react-icons/pi";
 import { AiOutlineMail } from "react-icons/ai";
 import { TiLockClosedOutline } from "react-icons/ti";
 import Image from 'next/image';
+import { TopHeader } from '@/components/header/topHeader';
+import { PHeader } from '@/components/header/t2';
 
 
 export default function SignUp() {
   return (
+
     <main className='w-[1920px'>
+       {/* import header */}
+                <TopHeader />
+                <PHeader title='Sign up page'/>
+                 {/* import header end*/}
+
     <div className="h-[624px] flex py-[120px] items-center justify-center bg-gray-50">
       <div className="w-[424px] py-8 px-9 bg-white shadow-sm">
         <h2 className="text-xl px-37 font-bold mb-8">Sign Up</h2>

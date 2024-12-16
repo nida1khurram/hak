@@ -70,7 +70,7 @@ export default function Footer() {
               <Link href="/">Team</Link>
             </li>
             <li>
-              <Link href="/">Menu</Link>
+              <Link href="/menu">Menu</Link>
             </li>
             <li>
               <Link href="/">Contacts</Link>
@@ -81,7 +81,7 @@ export default function Footer() {
           <h3 className="text-2xl font-bold mb-6">Help?</h3>
           <ul className="text-sm space-y-2">
             <li>
-              <Link href="/">FAQ</Link>
+              <Link href="/faq">FAQ</Link>
             </li>
             <li>
               <Link href="/">Terms & Conditions</Link>
@@ -150,7 +150,7 @@ export default function Footer() {
             </li>
           </ul>
 {/* pic */}
-<div className="relative">
+{/* <div className="relative">
 <Image
                   src="/footer/footer.png"
                   alt="footer-logo"
@@ -158,12 +158,12 @@ export default function Footer() {
                   height={294.56}
                   className="w-[150px] md:w-[422.5px] md:h-[294.56] absolute z-10 mt-[-70px] md:mt-[-170px] ml-[210px] md:ml-[125px]"
                 />
-</div>
+</div> */}
 {/* pic */}
         </div>
       </div>
       <div className="max-w-[1920] bg-[#4F4F4F] text-white flex flex-col md:flex-row  md:items-center py-4 px-4 md:px-8 ">
-        <p className="text-[12px] md:text-[16px]">Copyright &copy; 2022 by Ayeman. All Rights Reserved.</p>
+        <p className="text-[12px] md:text-[16px] md:ml-24">Copyright &copy; 2022 by Ayeman. All Rights Reserved.</p>
         <div className="flex space-x-2 md:space-x-4 mt-4 md:mt-0 ml-0 md:ml-96 ">
           <Link href="#">
             <div className="w-9 h-9 bg-white text-[#4F4F4F] rounded-sm hover:text-[#ff9F0D] flex justify-center items-center">
