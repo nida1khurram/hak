@@ -122,14 +122,14 @@ export default function TeamMember() {
                   </div>
                 </Link>
                 <Link href={'/'} className=''>
-                  <div className='w-[36px] h-[36px] bg-[#d1d1d1] flex items-center justify-center rounded-full'>
+                  <div className='w-[36px] h-[36px] bg-[#d1d1d1] flex items-center justify-center rounded-full '>
                     <FaYoutube />
                   </div>
                 </Link>
               </div>
               {/* icon */}
               <h3 className="text-xl font-semibold mb-4 mt-4 text-center">{teamMem.title}</h3>
-              <p className='text-center'>{teamMem.destination}</p> 
+              <p className='text-center mb-4'>{teamMem.destination}</p> 
             </div>
           ))}
         </div>
