@@ -19,7 +19,7 @@ export default function Header() {
           <ul className="flex flex-col md:flex-row md:space-x-8 mb-4 md:mb-0 ">
             <li className='hover:text-[#ff9F0D]'><Link href="/">Home</Link></li>
             <li className='hover:text-[#ff9F0D]'><Link href="/menu">Menu</Link></li>
-            <li className='hover:text-[#ff9F0D]'><Link href="/">Blog</Link></li>
+            <li className='hover:text-[#ff9F0D]'><Link href="/blogPage">Blog</Link></li>
             <li className='hover:text-[#ff9F0D]'><Link href="/">Pages</Link></li>
             <li className='hover:text-[#ff9F0D]'><Link href="/aboutUs">About</Link></li>
             <li className='hover:text-[#ff9F0D]'><Link href="/shop">Shop</Link></li>

@@ -14,10 +14,10 @@ import BlogPosts from "@/components/landingPage/BlogPosts";
 
 
 
-import AboutUs from "@/components/aboutUs/aboutUs";
+
 import Faq from "./faq/page";
-import BlogPage from "./blogPage/page";
-import TeamMember from "@/components/aboutUs/teamMember";
+
+
 
 
 
@@ -45,10 +45,10 @@ export default function Home() {
 {/* <Faq /> */}
 {/* <BlogPage /> */}
 
-                                  {/* <AboutUs /> */}
-                                  {/* <BlogList /> */}
+                                
+                                 
 
-<TeamMember />
+
 
       </div>
 
