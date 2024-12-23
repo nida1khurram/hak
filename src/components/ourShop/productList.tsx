@@ -17,6 +17,7 @@ const ProductList: React.FC<ProductListProps> = ({ filteredProducts }) => {
       {filteredProducts.map((product) => (
         <div key={product.id} className="max-w-[312px] max-h-330px rounded-lg shadow-md overflow-hidden">
           <Link href={`/shop/${product.slug}`}>
+          
             <HoverCard>
               <HoverCardTrigger>
                 <Image

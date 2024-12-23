@@ -12,10 +12,14 @@ import BlogPosts from "@/components/landingPage/BlogPosts";
 
 
 
-import Error from "./404/page";
-import BlogList from "@/components/blogPage/blog1";
+
+
 import AboutUs from "@/components/aboutUs/aboutUs";
 import Faq from "./faq/page";
+import BlogPage from "./blogPage/page";
+import TeamMember from "@/components/aboutUs/teamMember";
+
+
 
 
 export default function Home() {
@@ -39,13 +43,12 @@ export default function Home() {
 
                         
 {/* <Faq /> */}
+{/* <BlogPage /> */}
 
-{/* <Error />  */}
                                   {/* <AboutUs /> */}
                                   {/* <BlogList /> */}
 
-
-
+<TeamMember />
 
       </div>
 
