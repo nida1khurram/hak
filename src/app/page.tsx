@@ -34,7 +34,11 @@ export default function Home() {
        <Statistics />
     <Menu />
     <Chefs />
-  <Testimonials />
+    
+    <div className="bg-[#0D0D0D]">
+    <Testimonials />
+    </div>
+  
  <ResturantActive />
  <BlogPosts />
  {/* landing Page end*/}

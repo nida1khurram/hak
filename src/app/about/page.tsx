@@ -1,3 +1,4 @@
+"use client"
 import Image from 'next/image'
 import { Container } from '../../components/container'
 import Link from 'next/link'
@@ -6,6 +7,8 @@ import { offers, teamMember, testimonials } from '../../components/aboutUs/about
 import TeamMember from '@/components/aboutUs/teamMember';
 import { TopHeader } from '@/components/header/topHeader';
 import { PHeader } from '@/components/header/t2';
+import Testimonials from '@/components/landingPage/Testimonials';
+import Breakfast from '@/components/ourMenu/breakfast';
 export default function AboutUsPage() {
   return (
     <Container>
@@ -70,27 +73,13 @@ export default function AboutUsPage() {
       </section>
 
       {/* team member */}
-    <TeamMember />
-      {/* <section className='mb-96'>
-     <div className='w-full h-[460px] bg-yellow relative'>
-     <div className=' ml-[550px] '>
-     <h2 className="w-[418px] h-[176px] text-5xl font-bold mt-20 absolute text-white ml-10">Team Member</h2>
-      <p className='absolute mt-40  w-[418px] h-[176px] text-center text-[16px] text-white'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Varius sed pharetra dictum neque massa congue</p> 
-     </div>
+      <TeamMember />
      
-      </div>
-    
-     <div className="grid md:grid-cols-4 gap-2 absolute mt-[-200px] ml-20 ">
-          {teamMember.map((teamMem, index) => (
-            <div key={index} className=" shadow-lg ">
-              <Image src={teamMem.image} alt="Dish Presentation" width={312} height={300} className="object-cover" />
-              <h3 className="text-xl font-semibold mb-4 mt-4 text-center">{teamMem.title}</h3>
-              <p className=' text-center'>{teamMem.destination}</p> 
-            </div>
-          ))}
-        </div>
-   
-      </section> */}
+     {/* testimonials */}
+        <Testimonials />  
+
+{/* our menu */}
+<Breakfast />
     
     {/* <section className="">
         <h2 className="text-3xl font-bold mb-8 text-center">What Our Customers Say</h2>

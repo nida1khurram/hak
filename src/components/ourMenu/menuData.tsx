@@ -105,4 +105,29 @@ export const starterMenu = [
       calories: '560 Cal'
     }
   ]
-  
+  export const breakfasts = [
+    {
+      name: 'Alder Grilled Chinook Salmon',
+      description: 'Toasted Pine Nut and Parsley Salad',
+      price: 32,
+      calories: '560 Cal'
+    },
+    {
+      name: 'Alder Grilled Chinook Salmon',
+      description: 'Toasted Pine Nut and Parsley Salad',
+      price: 32,
+      calories: '560 Cal'
+    },
+    {
+      name: 'Alder Grilled Chinook Salmon',
+      description: 'Toasted Pine Nut and Parsley Salad',
+      price: 32,
+      calories: '560 Cal'
+    },
+    {
+      name: 'Alder Grilled Chinook Salmon',
+      description: 'Toasted Pine Nut and Parsley Salad',
+      price: 32,
+      calories: '560 Cal'
+    },
+  ];

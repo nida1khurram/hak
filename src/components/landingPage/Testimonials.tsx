@@ -17,7 +17,7 @@ const testimonials = [
 export default function Testimonials() {
   return (
     <Container>
-    <section className="bg-[#0D0D0D] mx-auto py-4 md:py-16 px-6 ">
+    <section className=" mx-auto py-4 md:py-16 px-6 ">
       <div className='mb-20 md:mb-32'>
       <h2 className="font-greatvibes text-orange-500 text-3xl font-bold  mb-4">Testimonials</h2>
       <h2 className="text-2xl md:text-5xl font-bold  text-white">
