@@ -4,10 +4,16 @@ import Link from 'next/link'
 import { CiPlay1 } from "react-icons/ci";
 import { offers, teamMember, testimonials } from '../../components/aboutUs/aboutData';
 import TeamMember from '@/components/aboutUs/teamMember';
-
+import { TopHeader } from '@/components/header/topHeader';
+import { PHeader } from '@/components/header/t2';
 export default function AboutUsPage() {
   return (
     <Container>
+ {/* import header */}
+      <TopHeader />
+      <PHeader title='About Us' />
+       {/* import header end*/}
+
     <div className=" mx-auto px-4 py-8 md:px-6 lg:px-8">
       <section className="mb-20">
         
