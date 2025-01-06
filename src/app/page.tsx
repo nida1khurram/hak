@@ -12,16 +12,6 @@ import BlogPosts from "@/components/landingPage/BlogPosts";
 
 
 
-
-
-
-import Faq from "./faq/page";
-
-
-
-
-
-
 export default function Home() {
   return (
    <>
@@ -44,16 +34,7 @@ export default function Home() {
  {/* landing Page end*/}
 
 
-
-                        
-{/* <Faq /> */}
-{/* <BlogPage /> */}
-
                                 
-                                 
-
-
-
       </div>
 
    </>

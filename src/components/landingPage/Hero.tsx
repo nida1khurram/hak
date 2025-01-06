@@ -1,5 +1,4 @@
 
-
 'use client';
 
 import Image from 'next/image';
@@ -14,7 +13,7 @@ export default function Hero() {
   return (
     <Container>
       <Header />
-      <section className="mx-auto flex flex-col lg:flex-row relative h-screen bg-[#0D0D0D]">
+      <section className="mx-auto flex flex-col lg:flex-row relative bg-[#0D0D0D] pb-[650px] ">
         <Image
           src="/hero/bgimage.png"
           alt="Hero dish"
@@ -24,8 +23,8 @@ export default function Hero() {
         />
         <div className="absolute inset-0 bg-black bg-opacity-90 z-10 flex flex-col lg:flex-row mx-auto">
           {/* left side */}
-          <div className='lg:w-[45%] w-full mx-auto'>
-            <div className="relative z-20 h-full flex flex-col justify-center items-start px-6 lg:px-10 mt-4 lg:mt-0">
+          <div className='lg:w-[45%] w-full mx-auto pt-40'>
+            <div className="relative z-20  flex flex-col justify-center items-start px-6 lg:px-10 mt-4 lg:mt-0">
               <div className='lg:w-[27px] lg:h-[492px] absolute mt-[-100px] lg:mt-96 lg:ml-[-20px] left-4 lg:left-auto'>
                 <FaFacebookF className='text-[#ff9F0D] mb-5' />
                 <FaTwitter className='text-[#ff9F0D] mb-5' />

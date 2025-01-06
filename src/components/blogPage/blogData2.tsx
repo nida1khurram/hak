@@ -1,4 +1,4 @@
-export interface BlogPost {
+export interface BlogPost2 {
     id: number;
     title: string;
     date: string;
@@ -7,18 +7,18 @@ export interface BlogPost {
     excerpt: string;
     image: string;
   }
-  export interface RecentPost {
+  export interface RecentPost2 {
     id: number;
     title: string;
     date: string;
     image: string;
   }
-  export interface MenuCategory {
+  export interface MenuCategory2 {
     name: string;
     count: number;
     image: string;
   }
-  export interface AuthorProfile {
+  export interface AuthorProfile2 {
     name: string;
     role: string;
     avatar: string;
@@ -26,7 +26,7 @@ export interface BlogPost {
     reviews: number;
   }
   
-  export const blogPosts = [
+  export const blogPosts2 = [
     {
       id: 1,
       title: "10 Reasons To Do A Digital Detox Challenge",
@@ -63,7 +63,9 @@ export interface BlogPost {
       title: "My Favorite Easy Black Pizza Toast Recipe",
       excerpt:
         "Ut vero erat at accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et",
-   
+        excerpt2:
+        "Ut vero erat at accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et",
+
       image: "/bloglist/p4.png",
       
       date: "Feb 14, 2022",
@@ -73,7 +75,7 @@ export interface BlogPost {
     // Add more blog posts...
   ];
   
-  export const recentPosts = [
+  export const recentPosts2 = [
     {
       id: 1,
       title: "Lorem ipsum dolor sit amet",
@@ -101,7 +103,7 @@ export interface BlogPost {
     // Add more recent posts...
   ];
   
-  export const menuCategories = [
+  export const menuCategories2 = [
     { name: "Chicken Fry", count: 26, image: "/bloglist/sidebar/p6.png" },
     { name: "Burger Food", count: 45, image: "/bloglist/sidebar/p7.png" },
     { name: "Pizza", count: 15, image: "/bloglist/sidebar/p8.png" },
@@ -109,7 +111,7 @@ export interface BlogPost {
     { name: "Vegetables", count: 16, image: "/bloglist/sidebar/p10.png" },
   ];
   
-  export const popularTags = [
+  export const popularTags2 = [
     "Sandwich",
     "Tuna",
     "BBQ",
@@ -123,7 +125,7 @@ export interface BlogPost {
     "Chicken",
   ];
   
-  export const galleryImages = [
+  export const galleryImages2 = [
     "/bloglist/photogallery/p1.png",
     "/bloglist/photogallery/p2.png",
     "/bloglist/photogallery/p3.png",
@@ -132,7 +134,7 @@ export interface BlogPost {
     "/bloglist/photogallery/p6.png",
   ];
   
-  export const authorProfile = {
+  export const authorProfile2 = {
     name: "Prince Miyako",
     role: "Blogger/Photographer",
     avatar:

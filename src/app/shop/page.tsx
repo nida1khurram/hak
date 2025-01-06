@@ -1,5 +1,4 @@
 'use client'
-
 import { useState } from 'react'
 import { FaRegArrowAltCircleRight } from "react-icons/fa";
 import { Slider } from "@/components/ui/slider"
@@ -10,9 +9,9 @@ import Image from 'next/image'
 import { Search, ChevronDown } from 'lucide-react'
 import { products, categories, latestProducts } from '@/components/ourShop/productData'
 import { PaginationProduct } from "@/components/pagination";
-import ProductList from "@/components/ourShop/productList";
-import { TopHeader } from '@/components/header/topHeader';
+import ProductList from "@/components/ourShop/ProductList";
 import { PHeader } from '@/components/header/t2';
+import { TopHeader } from '@/components/header/topHeader';
 
 export default function Shop() {
   const [sortBy, setSortBy] = useState('popularity')
@@ -25,11 +24,8 @@ export default function Shop() {
 
   return (
     <Container>
-      {/* import header */}
-      <TopHeader />
-      <PHeader title='Shop' />
-       {/* import header end*/}
-       
+        <TopHeader />
+        <PHeader title='Shop' /> 
       <div className="mx-auto px-4 py-16 md:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row gap-8">
           {/* Main content */}
@@ -69,7 +65,8 @@ export default function Shop() {
             </div>
 
             {/* product section */}
-            <ProductList filteredProducts={filteredProducts} />
+            <ProductList />
+            {/* filteredProducts={filteredProducts}  */}
             {/* product section end*/}
 
             {/* pagination */}

@@ -25,7 +25,7 @@ export default function Footer() {
             placeholder="Enter Your Email"
             className="max-w-72 h-12 absolute md:mt-0 mt-16 ml-[-100px] md:ml-[-310px] px-4 rounded-sm bg-[#ff9F0D] placeholder-white md:mb-0 mb-20 "
           />
-          {/* <button className="absolute md:relative top-0 right-0 md:right-auto md:top-auto w-full md:w-40 h-12 mt-2 md:mt-0 rounded-sm text-[#ff9F0D] bg-white"> */}
+
           <button className=" absolute md:mt-0 mt-28 ml-[-95px] md:ml-[-100px] w-40 h-12  rounded-sm text-[#ff9F0D] bg-white  ">
             Subscribe Now
           </button>
@@ -34,9 +34,7 @@ export default function Footer() {
       <p className="text-base  font-normal leading-6  max-w-[1170px] mx-9 md:mx-auto mb-16 h-[56px] border-b-[1px] border-[#ff9F0D] ">
         Don&apos;t wait make a smart & logical quote here. Its pretty easy.
        </p>
-      {/* <p className="text-base font-normal leading-6 w-full max-w-7xl mx-auto mb-8 mt-8 px-4 md:px-8 border-b border-[#ff9F0D]">
-        Don&apos;t wait make a smart & logical quote here. It's pretty easy.
-      </p> */}
+
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 px-4 md:px-24 py-8">
         <div>
           <h3 className="text-2xl font-bold mb-6 mt-7 md:mt-0">About Us</h3>
@@ -58,7 +56,7 @@ export default function Footer() {
           <h3 className="text-2xl font-bold mb-6">Useful Links</h3>
           <ul className="text-sm space-y-2">
             <li>
-              <Link href="/">About</Link>
+              <Link href="/about">About</Link>
             </li>
             <li>
               <Link href="/News">News</Link>
@@ -149,17 +147,6 @@ export default function Footer() {
               </Link>
             </li>
           </ul>
-{/* pic */}
-{/* <div className="relative">
-<Image
-                  src="/footer/footer.png"
-                  alt="footer-logo"
-                  width={422.5}
-                  height={294.56}
-                  className="w-[150px] md:w-[422.5px] md:h-[294.56] absolute z-10 mt-[-70px] md:mt-[-170px] ml-[210px] md:ml-[125px]"
-                />
-</div> */}
-{/* pic */}
         </div>
       </div>
       <div className="max-w-[1920] bg-[#4F4F4F] text-white flex flex-col md:flex-row  md:items-center py-4 px-4 md:px-8 ">
