@@ -3,6 +3,10 @@ export const product = {
   title: 'Product',
   type: 'document',
   fields: [
+    {  
+      name: 'id', 
+      title: 'Id',
+       type: 'number' },
 {
       name: 'name',
       title: 'Name',
