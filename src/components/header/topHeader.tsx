@@ -1,5 +1,8 @@
-'use client'
 
+"use client"
+
+import { RootState } from "@/app/redux/Store"; 
+import { useSelector } from "react-redux";
 import * as React from "react"
 import Link from "next/link"
 import { cn } from "@/lib/utils"
@@ -21,6 +24,7 @@ const navigation = [
 export function TopHeader() {
   const pathname = usePathname()
   const [isScrolled, setIsScrolled] = React.useState(false)
+  const item = useSelector((state: RootState) => state.cart);
 
   React.useEffect(() => {
     const handleScroll = () => {
@@ -102,11 +106,12 @@ export function TopHeader() {
             </button>
           
             <button className="group p-0 relative">
-              <Link href={'/cart'}>
+              <Link href={'/cart'} >
               <ShoppingBag className="h-6 w-6 text-white group-hover:text-[#FF9F0D]" />
               </Link>
-            
+              {item.length}
             </button>
+            
           </div>
         </div>
       </div>

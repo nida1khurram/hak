@@ -6,7 +6,7 @@ export const product = {
     {  
       name: 'id', 
       title: 'Id',
-       type: 'number' },
+       type: 'string' },
 {
       name: 'name',
       title: 'Name',

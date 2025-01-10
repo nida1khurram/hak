@@ -5,6 +5,8 @@ import { inter, poppins, pacifico, yuji_mai, great_vibes } from "../components/f
 import "./globals.css";
 
 import Footer from "@/components/Footer";
+import ReduxProvider from "@/components/Cart/reduxprovider";
+import Header from "@/components/header/header";
 
 
 export const metadata: Metadata = {
@@ -21,7 +23,8 @@ export default function RootLayout({
     <html lang="en">
       <body className={(inter.variable, poppins.variable, pacifico.variable, yuji_mai.variable, great_vibes.variable)}>
         {/* <Header /> */}
-        {children}
+        <ReduxProvider>{children}</ReduxProvider>
+
         <Footer />
       </body>
     </html>
