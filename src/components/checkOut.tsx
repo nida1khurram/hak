@@ -3,6 +3,8 @@
 import { useState, useEffect } from 'react'
 import { useRouter } from 'next/navigation'
 import Image from 'next/image'
+import axios from "axios"
+
 
 interface CartItem {
   name: string
@@ -29,7 +31,16 @@ export default function CheckoutPage() {
     const formData = new FormData(e.target as HTMLFormElement)
     const checkoutData = Object.fromEntries(formData.entries())
     localStorage.setItem('checkoutData', JSON.stringify(checkoutData))
-    router.push('/payment')
+    // router.push('/payment')
+  }
+
+  const proceedToPayment = () => {
+    axios.get('api/stripe-checkout').then((response)=>{
+      console.log(response.data?.message?.url); 
+
+      window.location.href = response.data?.message?.url;
+
+    }).catch(error => console.log(error));
   }
 
   return (
@@ -62,9 +73,13 @@ export default function CheckoutPage() {
               <label htmlFor="postcode" className="block mb-2">Postcode</label>
               <input type="text" id="postcode" name="postcode" required className="w-full p-2 border rounded" />
             </div>
-            <button type="submit" className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
+
+            <button 
+            onClick={proceedToPayment}
+             className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
               Proceed to Payment
             </button>
+
           </form>
         </div>
         <div className="w-full lg:w-1/2 px-4">
