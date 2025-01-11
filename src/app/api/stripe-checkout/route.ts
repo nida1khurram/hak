@@ -1,7 +1,7 @@
 import { Currency } from "lucide-react";
 import { NextResponse } from "next/server"
 
-const stripe = require('stripe')('sk_test_51QforJHaBmlNnpRW8Iz021v5Nej3LVzc432FUuDoZzAROzaTGLjvinqEe77rYrOimKxN1RKmP7VbGXwEe53qdSN300H0rI1nHe');
+const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);
 
 export async function GET(){
     
@@ -26,3 +26,61 @@ export async function GET(){
         message: session,
     })
 }
+
+
+
+
+
+
+
+
+
+
+
+
+// import { NextResponse } from "next/server"
+
+// const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);
+
+// export async function GET(request: Request) {
+//   try {
+//     const { products } = await request.json();
+    
+//     const session = await stripe.checkout.sessions.create({
+//       success_url: 'https://example.com/success',
+//       line_items: products.map((product: any) => ({
+//         price_data: {
+//           currency: "USD",
+//           product_data: {
+//             name: product.name,
+//           },
+//           unit_amount: Math.round(product.price * 100), // Stripe expects amount in cents
+//         },
+//         quantity: product.quantity,
+//       })),
+//       mode: 'payment',
+//     });
+
+//     return NextResponse.json({
+//       message: session,
+//     })
+//   } catch (error) {
+//     console.error('Error creating checkout session:', error);
+//     return NextResponse.json({ error: 'Error creating checkout session' }, { status: 500 });
+//   }
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// // https://www.youtube.com/watch?v=7hN7fX-TVf4

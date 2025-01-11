@@ -1,56 +1,78 @@
-export const product = {
-  name: 'product',
-  title: 'Product',
-  type: 'document',
-  fields: [
-    {  
-      name: 'id', 
-      title: 'Id',
-       type: 'string' },
-{
-      name: 'name',
-      title: 'Name',
-      type: 'string',
-    },
-    {
-      name: 'slug',
-      title: 'Slug',
-      type: 'slug',
-    },
-    {
-      name: 'image',
-      title: 'Image',
-      type: 'image',
-    },
-    {
-      name: 'category',
-      title: 'Category',
-      type: 'string',
-    },
-    {
-      name: 'price',
-      title: 'Price',
-      type: 'number',
-    },
-    {
-      name: 'price2',
-      title: 'Original Price (optional)',
-      type: 'number',
-    },
-    {
-      name: 'rating',
-      title: 'Rating',
-      type: 'number',
-    },
-    {
-      name: 'sell',
-      title: 'Sell Tag',
-      type: 'string',
-    },
-    {
-      name: 'description',
-      title: 'Description',
-      type: 'text',
-    },
-  ]
-}
+export default {
+    name: 'product',
+    type: 'document',
+    title: 'Product',
+    fields: [
+      {
+        name: 'slug',
+        title: 'Slug',
+        type: 'slug',
+      },
+      {
+        name: 'name',
+        type: 'string',
+        title: 'Product Name',
+      },
+      {
+        name: 'description',
+        type: 'string',
+        title: 'Description'
+      },
+      {
+        name: 'price',
+        type: 'number',
+        title: 'Product Price',
+      },
+      {
+        name: 'discountPercentage',
+        type: 'number',
+        title: 'Discount Percentage',
+      },
+      {
+        name: 'priceWithoutDiscount',
+        type: 'number',
+        title: 'Price Without Discount',
+        description: 'Original price before discount'
+      },
+      {
+        name:'rating',
+        type:'number',
+        title:'Rating',
+        description:'Rating of the product'
+      },
+      {
+        name: 'ratingCount',
+        type: 'number',
+        title: 'Rating Count',
+        description: 'Number of ratings'
+      },
+      {
+        name: 'tags',
+        type: 'array',
+        title: 'Tags',
+        of: [{ type: 'string' }],
+        options: {
+          layout: 'tags'
+        },
+        description: 'Add tags like "new arrival", "bestseller", etc.'
+      },
+      {
+        name: 'sizes',
+        type: 'array',
+        title: 'Sizes',
+        of: [{ type: 'string' }],
+        options: {
+          layout: 'tags'
+        },
+        description: 'Add sizes like S , M , L , XL , XXL'
+      },
+      {
+        name: 'image',
+        type: 'image',
+        title: 'Product Image',
+        options: {
+          hotspot: true // Enables cropping and focal point selection
+        }
+      }
+    ]
+  };

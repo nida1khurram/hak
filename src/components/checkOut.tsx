@@ -85,7 +85,7 @@ export default function CheckoutPage() {
         <div className="w-full lg:w-1/2 px-4">
           <h2 className="text-2xl font-bold mb-4">Your Order</h2>
           <div className="border p-4 rounded">
-            {cartItems.map((item, index) => (
+            {cartItems.map((item,index) => (
               <div key={index} className="flex justify-between items-center mb-4">
                 <div className="flex items-center">
                   <Image src={item.image} alt={item.name} width={50} height={50} className="mr-4" />
