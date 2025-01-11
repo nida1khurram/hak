@@ -272,12 +272,20 @@
 //               </button>
 //             </div>
 //           </div>
+
 //         </div>
 //       </div>
 //     </Container>
 //   );
 // }
 //___________________OLD UI CODE__________
+
+
+
+
+
+
+
 
 // 'use client'
 
@@ -334,6 +342,15 @@
 //   )
 // }
 //----------------- OK CODE
+
+
+
+
+
+
+
+
+
 
 'use client'
 
@@ -448,6 +465,48 @@ export default function CartPage() {
           </>
         )}
       </div>
+
+
+<div className="mt-8 grid md:grid-cols-2 gap-4">
+<div className="border rounded-lg p-6">
+  <h2 className="text-lg font-semibold mb-4">Coupon Code</h2>
+  <p className="text-sm text-gray-600 mb-4">
+    Enter your coupon code if you have one. A coupon code may provide a discount on your purchase.
+  </p>
+  <div className="flex gap-2">
+    <input
+      type="text"
+      placeholder="Enter discount code"
+      className="flex-1 px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500"
+    />
+    <button className="px-6 py-2 bg-orange-500 text-white rounded-lg hover:bg-orange-600 transition-colors">
+      Apply
+    </button>
+  </div>
+</div>
+
+<div className="border rounded-lg p-6">
+  <h2 className="text-lg font-semibold mb-4">Total Bill</h2>
+  <div className="space-y-2">
+    <div className="flex justify-between">
+      <span>Cart Subtotal</span>
+      <span>${total.toFixed(2)}</span>
+    </div>
+    <div className="flex justify-between">
+      <span>Shipping Charge</span>
+      <span>$10.00</span>
+    </div>
+    <div className="flex justify-between font-semibold pt-2 border-t">
+      <span>Total Amount</span>
+      <span>${(total + 10).toFixed(2)}</span>
+    </div>
+  </div>
+  <button className="w-full mt-4 px-6 py-3 bg-orange-500 text-white rounded-lg hover:bg-orange-600 transition-colors flex items-center justify-center gap-2">
+    <Link href="/checkout">Proceed to Checkout</Link>
+  </button>
+</div>
+</div>
+
     </Container>
   )
 }
