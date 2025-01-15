@@ -23,7 +23,9 @@ export default function RootLayout({
     <html lang="en">
       <body className={(inter.variable, poppins.variable, pacifico.variable, yuji_mai.variable, great_vibes.variable)}>
         {/* <Header /> */}
-        <ReduxProvider>{children}</ReduxProvider>
+        <ReduxProvider>
+        {children}
+        </ReduxProvider>
 
         <Footer />
       </body>
