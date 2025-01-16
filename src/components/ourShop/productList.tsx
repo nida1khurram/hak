@@ -164,7 +164,7 @@ const fetchProducts = async (): Promise<IProduct[]> => {
     image,
     category,
     price,
-    price2,
+    priceWithoutDiscount,
     rating,
     sell
   }`;
@@ -178,7 +178,7 @@ interface IProduct {
   image: Iimage;
   category: string;
   price: number;
-  price2?: number;
+  priceWithoutDiscount?: number;
   rating?: number;
   sell?: string;
 }
@@ -208,7 +208,7 @@ const ProductList: React.FC = () => {
 
   return (
     <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
-      {products.map(({ slug, image, name, price, price2, sell }) => (
+      {products.map(({ slug, image, name, price, priceWithoutDiscount, sell }) => (
         <div
           key={slug}
           className="max-w-[312px] rounded-lg shadow-md overflow-hidden"
@@ -240,9 +240,9 @@ const ProductList: React.FC = () => {
               <span className="text-orange-500 font-bold">
                 ${price.toFixed(2)}
               </span>
-              {price2 && (
+              {priceWithoutDiscount && (
                 <span className="text-gray-600 line-through">
-                  ${price2.toFixed(2)}
+                  ${priceWithoutDiscount.toFixed(2)}
                 </span>
               )}
             </div>
