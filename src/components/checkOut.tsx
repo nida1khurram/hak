@@ -58,12 +58,12 @@ export default function CheckoutPage() {
   //   }).catch(error => console.log(error));
   // }
 
+
   // user data sent sanity start
   const handleCheckout =()=>{
     console.log(customerInfo);
     
     }
-    
   // user data sent sanity end
 
  // shipping charges add
@@ -82,37 +82,37 @@ export default function CheckoutPage() {
             <div className="mb-4">
               <label htmlFor="name" className="block mb-2">Full Name</label>
               <input type="text" id="name" name="name"
-              value={customerInfo.name}
-              onChange={handleInputChange}
+              // user data sent sanity 
+              value={customerInfo.name}  onChange={handleInputChange}
               
               required className="w-full p-2 border rounded" />
             </div>
             <div className="mb-4">
               <label htmlFor="email" className="block mb-2">Email Address</label>
               <input type="email" id="email" name="email"
-               value={customerInfo.email}
-               onChange={handleInputChange}
+                  // user data sent sanity 
+               value={customerInfo.email}      onChange={handleInputChange}
               required className="w-full p-2 border rounded" />
             </div>
             <div className="mb-4">
               <label htmlFor="address" className="block mb-2">Address</label>
               <input type="text" id="address" name="address"
-               value={customerInfo.address}
-               onChange={handleInputChange}
+                  // user data sent sanity 
+               value={customerInfo.address}      onChange={handleInputChange}
               required className="w-full p-2 border rounded" />
             </div>
             <div className="mb-4">
               <label htmlFor="city" className="block mb-2">City</label>
               <input type="text" id="city" name="city"
-                value={customerInfo.city}
-                onChange={handleInputChange}
+                  // user data sent sanity 
+                value={customerInfo.city}     onChange={handleInputChange}
                  required className="w-full p-2 border rounded" />
             </div>
             <div className="mb-4">
               <label htmlFor="phoneno" className="block mb-2">Phone No</label>
               <input type="text" id="phone" name="phone"
-                value={customerInfo.phone}
-                onChange={handleInputChange}
+                  // user data sent sanity 
+                value={customerInfo.phone}    onChange={handleInputChange}
                  required className="w-full p-2 border rounded" />
             </div>
             {/* <div className="mb-4">
@@ -136,7 +136,7 @@ export default function CheckoutPage() {
              className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
              Submit Order
             </button>
-
+{/* submit order  // user data sent sanity*/}
           </form>
         </div>
         <div className="w-full lg:w-1/2 px-4">
