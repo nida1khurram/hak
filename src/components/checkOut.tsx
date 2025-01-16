@@ -23,7 +23,22 @@ export default function CheckoutPage() {
     setCartItems(cart)
     const cartTotal = cart.reduce((sum: number, item: CartItem) => sum + item.price * item.quantity, 0)
     setTotal(cartTotal)
+    // console.log(cart)
   }, [])
+
+  // user data sent sanity start
+  const [customerInfo,setCustomerInfo] = useState({
+    name:"",
+    email:"",
+    address:"",
+    city:"",
+    phone:"",
+    })
+   const handleInputChange =(e:any)=>{
+    const {name,value} = e.target
+    setCustomerInfo({...customerInfo,[name]:value})
+   } 
+// user data sent sanity end
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
@@ -34,17 +49,29 @@ export default function CheckoutPage() {
     // router.push('/payment')
   }
 
-  const proceedToPayment = () => {
-    axios.get('api/stripe-checkout').then((response)=>{
-      console.log(response.data?.message?.url); 
+  // const proceedToPayment = () => {
+  //   axios.get('api/stripe-checkout').then((response)=>{
+  //     console.log(response.data?.message?.url); 
 
-      window.location.href = response.data?.message?.url;
+  //     window.location.href = response.data?.message?.url;
 
-    }).catch(error => console.log(error));
-  }
+  //   }).catch(error => console.log(error));
+  // }
+
+  // user data sent sanity start
+  const handleCheckout =()=>{
+    console.log(customerInfo);
+    
+    }
+    
+  // user data sent sanity end
+
  // shipping charges add
  const shippingCharges = 10;
  const totalAmount = total + shippingCharges
+
+
+
 
   return (
     <div className="container mx-auto px-4 py-8">
@@ -54,33 +81,60 @@ export default function CheckoutPage() {
           <form onSubmit={handleSubmit}>
             <div className="mb-4">
               <label htmlFor="name" className="block mb-2">Full Name</label>
-              <input type="text" id="name" name="name" required className="w-full p-2 border rounded" />
+              <input type="text" id="name" name="name"
+              value={customerInfo.name}
+              onChange={handleInputChange}
+              
+              required className="w-full p-2 border rounded" />
             </div>
             <div className="mb-4">
               <label htmlFor="email" className="block mb-2">Email Address</label>
-              <input type="email" id="email" name="email" required className="w-full p-2 border rounded" />
+              <input type="email" id="email" name="email"
+               value={customerInfo.email}
+               onChange={handleInputChange}
+              required className="w-full p-2 border rounded" />
             </div>
             <div className="mb-4">
               <label htmlFor="address" className="block mb-2">Address</label>
-              <input type="text" id="address" name="address" required className="w-full p-2 border rounded" />
+              <input type="text" id="address" name="address"
+               value={customerInfo.address}
+               onChange={handleInputChange}
+              required className="w-full p-2 border rounded" />
             </div>
             <div className="mb-4">
               <label htmlFor="city" className="block mb-2">City</label>
-              <input type="text" id="city" name="city" required className="w-full p-2 border rounded" />
+              <input type="text" id="city" name="city"
+                value={customerInfo.city}
+                onChange={handleInputChange}
+                 required className="w-full p-2 border rounded" />
             </div>
             <div className="mb-4">
+              <label htmlFor="phoneno" className="block mb-2">Phone No</label>
+              <input type="text" id="phone" name="phone"
+                value={customerInfo.phone}
+                onChange={handleInputChange}
+                 required className="w-full p-2 border rounded" />
+            </div>
+            {/* <div className="mb-4">
               <label htmlFor="country" className="block mb-2">Country</label>
               <input type="text" id="country" name="country" required className="w-full p-2 border rounded" />
             </div>
             <div className="mb-4">
               <label htmlFor="postcode" className="block mb-2">Postcode</label>
               <input type="text" id="postcode" name="postcode" required className="w-full p-2 border rounded" />
-            </div>
+            </div> */}
 
-            <button 
+            {/* <button 
             onClick={proceedToPayment}
              className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
               Proceed to Payment
+            </button> */}
+
+            {/* submit order  // user data sent sanity*/}
+               <button 
+            onClick={handleCheckout}
+             className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
+             Submit Order
             </button>
 
           </form>
