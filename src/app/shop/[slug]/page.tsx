@@ -127,7 +127,7 @@ interface Product {
   image: string
   category: string
   price: number
-  price2?: number
+  priceWithoutDiscount?: number
   rating?: number
   sell?: string
 }
@@ -139,7 +139,7 @@ async function getProduct(slug: string): Promise<Product | null> {
     "image": image.asset->url,
     category,
     price,
-    price2,
+    priceWithoutDiscount,
     rating,
     sell
   }`
@@ -199,8 +199,8 @@ export default async function ProductPage({ params }: { params: { slug: string }
             <h1 className="text-4xl font-bold mb-4">{product.name}</h1>
             <div className="flex items-center mb-4">
               <span className="text-2xl text-orange-500 font-bold mr-4">${product.price.toFixed(2)}</span>
-              {product.price2 && (
-                <span className="text-xl text-gray-500 line-through">${product.price2.toFixed(2)}</span>
+              {product.priceWithoutDiscount && (
+                <span className="text-xl text-gray-500 line-through">${product.priceWithoutDiscount.toFixed(2)}</span>
               )}
             </div>
             {product.rating && (
