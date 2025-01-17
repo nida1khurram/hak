@@ -1,3 +1,4 @@
+schema create without sanity
 export const product2 = {
   name: 'product',
   title: 'Product',

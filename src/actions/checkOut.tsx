@@ -1,8 +1,8 @@
 // customer order data save on sanity
 // types folder
 import { client } from "@/sanity/lib/client";
-import { Customer } from "../types/customer";
-import { Product } from "../types/product";
+import { Customer } from "../types/customer.js";
+import { Product } from "../types/product.js";
 
 const CreateCustomerInSanity = async (customerInfo:Customer)=>
 {

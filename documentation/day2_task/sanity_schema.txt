@@ -1,3 +1,4 @@
+fetch product with api 
 export default {
     name: 'product',
     type: 'document',
