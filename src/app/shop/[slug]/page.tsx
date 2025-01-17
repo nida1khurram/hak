@@ -213,6 +213,7 @@ export default async function ProductPage({ params }: { params: { slug: string }
               <p className="mb-4 inline-block bg-orange-500 text-white px-2 py-1 rounded">{product.sell}</p>
             )}
             <AddToCartButton product={product} />
+            
             <Link href="/shop" className="text-orange-500 font-bold hover:underline ml-4">
               Back to Shop
             </Link>
